@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stamina clone</title>
+    <script src="keyboard.js" defer></script>
+    <script src="exercises.js" defer></script>
+    <script src="i18n.js" defer></script>
+    <script src="ui.js" defer></script>
+    <script src="statistics.js" defer></script>
+    <script src="canvas.js" defer></script>
+    <script src="helpers.js" defer></script>
+    <script src="main.js" defer></script>
+    <!-- <script src="test.js" defer></script> -->
+  </head>
+  <body>
+    <h1>Hello, <span class="greeting"></span></h1>
+    <nav>
+      <button class="training-keyboard" style="background-color: red">
+        Training keyboard
+      </button>
+      <button class="settings">Settings</button>
+      <button class="statistics">Statistics</button>
+      <button class="save-data">Save data</button>
+      <button class="log-out">Log out</button>
+    </nav>
+    <div class="tab tab-1">
+      <div class="text"></div>
+      <div class="keyboard">
+        <button class="a">~</button>
+        <button class="a">!</button>
+        <button class="a">@</button>
+        <button class="s">#</button>
+        <button class="d">$</button>
+        <button class="f">%</button>
+        <button class="f">^</button>
+        <button class="h">&amp;</button>
+        <button class="k">*</button>
+        <button class="l">(</button>
+        <button class="colon">)</button>
+        <button class="colon">_</button>
+        <button class="colon">+</button>
+        <button class="grey" style="width: 81px">Backspace</button>
+        <button class="grey" style="width: 55px">Tab</button>
+        <button class="a alpha">Q</button>
+        <button class="s alpha">W</button>
+        <button class="d alpha">E</button>
+        <button class="f alpha">R</button>
+        <button class="f alpha">T</button>
+        <button class="h alpha">Y</button>
+        <button class="h alpha">U</button>
+        <button class="k alpha">I</button>
+        <button class="l alpha">O</button>
+        <button class="colon alpha">P</button>
+        <button class="colon alpha">{</button>
+        <button class="colon alpha">}</button>
+        <!--                 <button class="colon" style="width: 66px">|</button> -->
+        <br />
+        <button class="grey" style="width: 78px">Caps Lock</button>
+        <button class="a alpha">A</button>
+        <button class="s alpha">S</button>
+        <button class="d alpha">D</button>
+        <button class="f alpha">F</button>
+        <button class="f alpha">G</button>
+        <button class="h alpha">H</button>
+        <button class="h alpha">J</button>
+        <button class="k alpha">K</button>
+        <button class="l alpha">L</button>
+        <button class="colon alpha">:</button>
+        <button class="colon alpha">&quot;</button>
+        <button class="colon alpha">|</button>
+        <button class="grey enter" style="width: 40px">Enter</button>
+        <button class="grey" style="width: 105px">Shift</button>
+        <button class="a alpha">Z</button>
+        <button class="s alpha">X</button>
+        <button class="d alpha">C</button>
+        <button class="f alpha">V</button>
+        <button class="f alpha">B</button>
+        <button class="h alpha">N</button>
+        <button class="h alpha">M</button>
+        <button class="k alpha">&lt;</button>
+        <button class="l alpha">&gt;</button>
+        <button class="colon">?</button>
+        <button class="grey" style="width: 103px">Shift</button>
+        <button class="grey" style="width: 50px">Ctrl</button>
+        <button class="grey" style="width: 50px">Cmd</button>
+        <button class="grey" style="width: 50px">Alt</button>
+        <button class="space" style="width: 255px">&#32;</button>
+        <button class="grey" style="width: 50px">Alt</button>
+        <button class="grey" style="width: 50px">Cmd</button>
+        <button class="grey" style="width: 50px">Menu</button>
+        <button class="grey" style="width: 71px">Ctrl</button>
+      </div>
+      <button class="lang">EN</button>
+      <span class="repeat">Restart</span>
+      <div class="hands">
+        <canvas class="left-hand"></canvas>
+        <canvas class="right-hand"></canvas>
+      </div>
+    </div>
+    <div class="tab tab-2" style="display: none">
+      <textarea class="text-one" rows="10" cols="45"></textarea>
+      <button class="add-text" disabled>OK</button>
+      <input
+        type="file"
+        id="avatar"
+        name="avatar"
+        accept="image/png, image/jpeg"
+      />
+      <div class="dropdown">
+        <button class="choose-language">CHOOSE LANGUAGE</button>
+        <div>
+          <button class="javascript">JAVASCRIPT</button>
+          <button class="html">HTML</button>
+          <button class="css">CSS</button>
+        </div>
+      </div>
+    </div>
+    <div class="tab tab-3" style="display: none">
+      <button class="reset">Reset</button>
+      <div class="total-count">Total count: <span>0</span></div>
+      <div class="error-count">Error count: <span>0</span></div>
+      <div class="precision">
+        Precision:
+        <div></div>
+      </div>
+      <div class="concrete-errors" style="display: none">
+        Concrete errors:
+        <div></div>
+      </div>
+    </div>
+    <div class="tab tab-4" style="display: none">
+      <div class="word-typed">Word typed: <span>0</span></div>
+    </div>
+    <div class="modal-wrapper" style="display: none">
+      <div class="modal">
+        <div class="close">X</div>
+        <div class="msg">
+          <div class="total-count">Total count: <span>0</span></div>
+          <div class="error-count">Error count: <span>0</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

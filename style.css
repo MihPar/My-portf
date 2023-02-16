@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(116, 134, 116);
+    font-family: sans-serif;
+    margin: 0
+}
+
+textarea {
+    resize: none
+}
+
+.text {
+    white-space: pre;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 282px;
+    text-align: center;
+    overflow: hidden;
+    max-width: 250px;
+}
+
+.keyboard {
+    margin: 0, auto;
+    width: 659px;
+    border: 2px solid red;
+}
+
+button .enter {
+    height: 150px;
+}
+
+.keyboard button {
+    width: 40px;
+}
+
+.keyboard button {
+    white-space: pre;
+    border-radius: 4px;
+    color: #000;
+    height: 33px;
+    text-align: center;
+    margin: 0;
+}
+
+nav button {
+    width: auto;
+    padding: 5px;
+}
+
+/* .signUp {
+    padding: 10px 0px;
+    cursor: pointer;
+    font-weight: 500;
+    box-sizing: border-box;
+} */
+
+.a, .colon {
+    border: 1px solid #4d5a68;
+    background-color: #e1afae
+}
+
+.s, .l {
+    border: 1px solid #4d5a68;
+    background-color: #e2e0ad
+}
+
+.d, .k {
+    border: 1px solid #4d5a68;
+    background-color: #ade3b0
+}
+
+.f {
+    border: 1px solid #4d5a68;
+    background-color: #ade2de
+}
+
+.h {
+    border: 1px solid #4d5a68;
+    background-color: #dfade2
+}
+
+.grey {
+    font-size: 12px;
+    line-height: 30px;
+    background: #d7d7d7;
+    border: 1px solid #4d5a68;
+}
+
+.space {
+    border: 1px solid #4d5a68;
+    background-color: #afafe1;
+}
+
+
+.tab-3 {
+    margin-top: 15px;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.dropdown div button {
+    display: block;
+}
+
+.dropdown div {
+    display: none;
+}
+
+.dropdown:hover div {
+    display: block;
+}
+
+/* /*
+.choose-language:hover + div {
+    display: block;
+} */
+
+.repeat {
+    padding: 2px 6px;
+    border-width: 2px;
+    border-radius: 2px;
+/*     border-style: outset; */
+    background-color: buttonface;
+    font-size: 13.3333px;
+    cursor: default;
+}
+
+.repeat:active {
+    border-style: inset;    
+}
+
+.hands canvas {
+    background-color: #788eba;
+    
+}
+
+.modal-wrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    width: 250px;
+    height: 150px;
+    background-color: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .close {
+    cursor: default;
+    background-color: green;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 4px;    
+}
+
+.modal .msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}

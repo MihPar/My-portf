@@ -1,0 +1,23 @@
+[
+    {
+        "email": "a",
+        "password": "a",
+        "name": "John",
+        "wordsTyped": 0
+    },
+    {
+        "email": "b",
+        "password": "b",
+        "name": "Pete"
+    },
+    {
+        "email": "y",
+        "password": "y",
+        "name": "Vasya"
+    },
+    {
+        "email": "t",
+        "password": "t",
+        "name": "Tanya"
+    }
+]
